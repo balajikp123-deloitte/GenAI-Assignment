@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Action items from context</title>
+        <style>
+            .heading {
+                text-align: center;
+            } 
+            .grid { 
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Action items from context</h1>
+        <div class="grid">
+            <div>
+                <h2 style="color: green">Simplified Payment Verification</h2> 
+                <ul>
+                    <li>It is possible to verify payments without running a full network node.</li>
+                    <li>A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which can be obtained by querying network nodes.</li>
+                    <li>Generate a Merkle branch linking the transaction to the block it's timestamped in.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 style="color: blue">Combining and Splitting Value</h2> 
+                <ul>
+                    <li>Transactions contain multiple inputs and outputs.</li>
+                    <li>Accepting payments by combining smaller amount of inputs.</li>
+                    <li>Returning change by outputting it back to the sender.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 style="color: yellow">Privacy</h2> 
+                <ul>
+                    <li>Keeping public keys anonymous to maintain privacy.</li>
+                    <li>Using a new key pair for each transaction to keep them from being linked to a common owner.</li>
+                    <li>Understanding the risk of revealing other transactions if the owner of a key is revealed.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 style="color: red">Alerts from Network Nodes</h2> 
+                <ul>
+                    <li>The network node can detect an invalid block.</li>
+                    <li>Prompt the user's software to download the full block and alerted transactions.</li>
+                    <li>Businesses that receive frequent payments will probably still want to run their own nodes.</li> 
+                </ul>
+            </div> 
+        </div> 
+    </body>
+</html>

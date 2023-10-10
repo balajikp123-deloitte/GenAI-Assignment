@@ -1,0 +1,5 @@
+sentence_transformers
+faiss
+tika
+numpy
+openai
